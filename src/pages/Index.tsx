@@ -6,7 +6,7 @@ import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 const Index = () => {
   return (
     <div className="h-screen bg-gradient-subtle p-4 overflow-hidden">
-      <div className="max-w-7xl mx-auto h-full flex flex-col space-y-4">
+      <div className="max-w-7xl mx-auto h-full flex flex-col space-y-3">
         {/* Profile Header */}
         <div className="flex-shrink-0">
           <ProfileHeader />
@@ -17,11 +17,15 @@ const Index = () => {
           <ExperienceTimeline />
         </div>
         
-        {/* Interactive Sections Grid */}
+        {/* Interactive Sections Grid - Smaller */}
         <div className="flex-shrink-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <ContactSection />
-            <LanguagesSection />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="max-w-sm">
+              <ContactSection />
+            </div>
+            <div className="max-w-sm">
+              <LanguagesSection />
+            </div>
           </div>
         </div>
       </div>

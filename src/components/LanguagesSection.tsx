@@ -4,7 +4,7 @@ import { Languages } from "lucide-react";
 
 const languages = [
   { name: "Español", level: "Nativo", proficiency: 100 },
-  { name: "Inglés", level: "B2 Avanzado", proficiency: 80 }
+  { name: "Inglés", level: "Avanzado B2", proficiency: 85, institute: "Instituto CEM English" }
 ];
 
 export const LanguagesSection = () => {
@@ -31,6 +31,9 @@ export const LanguagesSection = () => {
                     {lang.level}
                   </span>
                 </div>
+                {lang.institute && (
+                  <div className="text-xs text-cv-content-foreground/70 italic">{lang.institute}</div>
+                )}
                 <div className="w-full bg-cv-sidebar/10 rounded-full h-2">
                   <div 
                     className="bg-gradient-to-r from-cv-accent to-cv-accent/80 h-2 rounded-full transition-all duration-1000 ease-out"
