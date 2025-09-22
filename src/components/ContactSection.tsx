@@ -35,11 +35,11 @@ const contactMethods = [
 
 export const ContactSection = () => {
   return (
-    <Card className="bg-cv-content border-border/50 p-4 shadow-lg hover:shadow-xl transition-all duration-300">
-      <h3 className="text-lg font-semibold text-cv-content-foreground mb-4 text-center">
+    <Card className="bg-cv-content border-border/50 p-3 shadow-lg hover:shadow-xl transition-all duration-300">
+      <h3 className="text-base font-semibold text-cv-content-foreground mb-3 text-center">
         Contacto
       </h3>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2">
         {contactMethods.map((method) => {
           const IconComponent = method.icon;
           return (
@@ -50,10 +50,10 @@ export const ContactSection = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 p-2 rounded-lg bg-cv-sidebar/5 hover:bg-cv-accent/10 transition-all duration-200 hover:scale-105 group cursor-pointer"
             >
-              <IconComponent className={`w-4 h-4 ${method.color} group-hover:scale-110 transition-transform`} />
+              <IconComponent className={`w-3 h-3 ${method.color} group-hover:scale-110 transition-transform`} />
               <div className="text-xs">
-                <div className="font-medium text-cv-content-foreground">{method.type}</div>
-                <div className="text-cv-text-light truncate">{method.value}</div>
+                <div className="font-medium text-cv-content-foreground text-xs">{method.type}</div>
+                <div className="text-cv-text-light truncate text-xs">{method.value}</div>
               </div>
             </a>
           );
