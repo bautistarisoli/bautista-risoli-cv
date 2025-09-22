@@ -66,8 +66,8 @@ export const ExperienceTimeline = () => {
                 <div className="absolute inset-0.5 bg-cv-content rounded-full"></div>
               </div>
               
-              {/* Year */}
-              <div className="mt-1 text-xs font-bold text-cv-accent bg-cv-accent-light px-2 py-1 rounded-full">
+              {/* Year - positioned below the timeline line */}
+              <div className="mt-3 text-xs font-bold text-cv-accent bg-cv-accent-light px-2 py-1 rounded-full">
                 {exp.year}
               </div>
               

@@ -1,7 +1,6 @@
 import { ProfileHeader } from "@/components/ProfileHeader";
 import { ContactSection } from "@/components/ContactSection";
-import { LanguagesSection } from "@/components/LanguagesSection";
-import { AcademicExperienceSection } from "@/components/AcademicExperienceSection";
+import { LanguagesAndAcademicSection } from "@/components/LanguagesAndAcademicSection";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 
 const Index = () => {
@@ -20,10 +19,9 @@ const Index = () => {
         
         {/* Interactive Sections Grid - Bottom */}
         <div className="flex-shrink-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-4xl mx-auto">
             <ContactSection />
-            <LanguagesSection />
-            <AcademicExperienceSection />
+            <LanguagesAndAcademicSection />
           </div>
         </div>
       </div>
