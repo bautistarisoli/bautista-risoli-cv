@@ -20,14 +20,14 @@ const contactMethods = [
   {
     type: "LinkedIn",
     value: "Bautista Risoli",
-    href: "https://linkedin.com/in/bautista-risoli-202b32296/",
+    href: "https://www.linkedin.com/in/bautista-risoli-202b32296/",
     icon: FaLinkedin,
     color: "text-blue-600"
   },
   {
     type: "Instagram",
     value: "@bautirisoli_",
-    href: "https://instagram.com/bautirisoli_/",
+    href: "https://www.instagram.com/bautirisoli_/",
     icon: FaInstagram,
     color: "text-pink-500"
   }
