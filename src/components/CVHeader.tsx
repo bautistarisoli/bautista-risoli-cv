@@ -17,7 +17,7 @@ export const CVHeader = () => {
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Bautista Risoli</h1>
           <p className="text-cv-sidebar-foreground/80 text-lg">Técnico en Comercialización</p>
-          <p className="text-cv-sidebar-foreground/70">23 años</p>
+          <p className="text-cv-sidebar-foreground/70">22 años</p>
         </div>
 
         <div className="space-y-3 w-full">

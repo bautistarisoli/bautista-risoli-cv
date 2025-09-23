@@ -12,7 +12,8 @@ export const ProfileHeader = () => {
           <img
             src={profilePhoto}
             alt="Bautista Risoli"
-            className="relative w-16 h-16 rounded-full object-cover border-3 border-cv-accent shadow-xl hover:scale-105 transition-transform duration-300"
+            className="relative w-24 h-24 rounded-full object-cover object-left-top border-3 border-cv-accent shadow-xl hover:scale-105 transition-transform duration-300"
+            style={{ objectPosition: '30% 20%' }}
           />
         </div>
         
@@ -31,13 +32,13 @@ export const ProfileHeader = () => {
         
         {/* Age and Address */}
         <div className="flex space-x-4 text-xs">
-          <div className="flex items-center space-x-1 text-cv-sidebar-foreground/90">
-            <Calendar className="w-3 h-3 text-cv-accent" />
-            <div>
-              <div className="font-medium">23 años</div>
-              <div className="opacity-80">01/08/2001</div>
+            <div className="flex items-center space-x-1 text-cv-sidebar-foreground/90">
+              <Calendar className="w-3 h-3 text-cv-accent" />
+              <div>
+                <div className="font-medium">22 años</div>
+                <div className="opacity-80">01/08/2002</div>
+              </div>
             </div>
-          </div>
           
           <div className="flex items-center space-x-1 text-cv-sidebar-foreground/90">
             <MapPin className="w-3 h-3 text-cv-accent" />

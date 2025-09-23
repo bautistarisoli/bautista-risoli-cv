@@ -55,16 +55,16 @@ export const ExperienceTimeline = () => {
       </div>
       
       <div className="relative flex-1 flex flex-col">
-        {/* Timeline line - positioned between years and circles */}
-        <div className="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-cv-accent/20 via-cv-accent to-cv-accent/20"></div>
-        
         <div className="flex justify-between items-start space-x-2">
           {experiences.map((exp, index) => (
             <div key={index} className="flex flex-col items-center flex-1 group">
-              {/* Year - positioned above the timeline line */}
+              {/* Year - positioned at the top */}
               <div className="mb-3 text-xs font-bold text-cv-accent bg-cv-accent-light px-2 py-1 rounded-full">
                 {exp.year}
               </div>
+              
+              {/* Timeline line - positioned between years and circles */}
+              <div className="w-full h-0.5 bg-gradient-to-r from-cv-accent/20 via-cv-accent to-cv-accent/20 mb-3"></div>
               
               {/* Timeline dot */}
               <div className="relative z-10 w-3 h-3 bg-cv-accent rounded-full shadow-lg group-hover:scale-125 transition-transform duration-200 border-2 border-cv-content">
