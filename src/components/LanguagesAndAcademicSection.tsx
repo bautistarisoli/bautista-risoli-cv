@@ -32,7 +32,7 @@ const academicProjects = [
 export const LanguagesAndAcademicSection = () => {
   return (
     <Card className="bg-cv-content border-border/50 p-3 shadow-lg hover:shadow-xl transition-all duration-300">
-      <div className="space-y-2">
+      <div className="space-y-2 flex flex-col items-center justify-center h-full">
         {/* Academic Experience */}
         <Popover>
           <PopoverTrigger asChild>

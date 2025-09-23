@@ -11,23 +11,23 @@ const contactMethods = [
     color: "text-blue-500"
   },
   {
-    type: "WhatsApp",
+    type: "WhatsApp", 
     value: "+54 223 537-9717",
-    href: "https://wa.me/542235379717",
+    href: "https://wa.me/5492235379717",
     icon: FaWhatsapp,
     color: "text-green-500"
   },
   {
     type: "LinkedIn",
     value: "Bautista Risoli",
-    href: "https://www.linkedin.com/in/bautista-risoli-202b32296/",
+    href: "https://linkedin.com/in/bautista-risoli-202b32296/",
     icon: FaLinkedin,
     color: "text-blue-600"
   },
   {
     type: "Instagram",
     value: "@bautirisoli_",
-    href: "https://www.instagram.com/bautirisoli_/",
+    href: "https://instagram.com/bautirisoli_/",
     icon: FaInstagram,
     color: "text-pink-500"
   }
