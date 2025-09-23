@@ -72,7 +72,7 @@ export const ExperienceTimeline = () => {
               </div>
               
               {/* Experience card */}
-              <div className="mt-2 p-2 bg-cv-sidebar/5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 border border-cv-accent/10 w-full">
+              <div className="mt-3 p-2 bg-cv-sidebar/5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 border border-cv-accent/10 w-full">
                 <h4 className="font-semibold text-xs text-cv-content-foreground text-center leading-tight">
                   {exp.title}
                 </h4>

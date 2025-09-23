@@ -12,8 +12,8 @@ export const ProfileHeader = () => {
           <img
             src={profilePhoto}
             alt="Bautista Risoli"
-            className="relative w-32 h-32 rounded-full object-cover border-3 border-cv-accent shadow-xl hover:scale-105 transition-transform duration-300"
-            style={{ objectPosition: '25% 15%', transform: 'scale(1.2)' }}
+            className="relative w-20 h-20 rounded-full object-cover border-3 border-cv-accent shadow-xl hover:scale-105 transition-transform duration-300"
+            style={{ objectPosition: 'center center' }}
           />
         </div>
         
