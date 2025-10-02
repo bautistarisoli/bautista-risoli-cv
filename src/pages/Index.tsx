@@ -19,7 +19,7 @@ const Index = () => {
         
         {/* Interactive Sections Grid - Bottom */}
         <div className="flex-shrink-0 md:h-[30%]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full mx-auto h-full">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-2 w-full mx-auto h-full">
             <ContactSection />
             <LanguagesAndAcademicSection />
           </div>
