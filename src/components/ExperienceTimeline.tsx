@@ -54,11 +54,12 @@ export const ExperienceTimeline = () => {
         <h3 className="text-lg font-semibold text-cv-content-foreground">Experiencia Laboral</h3>
       </div>
       
-      <div className="relative flex-1 flex flex-col">
+      <div className="relative flex-1 flex flex-col md:overflow-hidden overflow-x-auto">
         {/* Timeline line - positioned between years and circles */}
-        <div className="absolute top-10 left-0 right-0 h-0.5 bg-gradient-to-r from-cv-accent/20 via-cv-accent to-cv-accent/20"></div>
+        <div className="absolute top-10 left-0 right-0 h-0.5 bg-gradient-to-r from-cv-accent/20 via-cv-accent to-cv-accent/20 md:block hidden"></div>
         
-        <div className="flex justify-between items-start space-x-2">
+        {/* Desktop: horizontal timeline */}
+        <div className="hidden md:flex justify-between items-start space-x-2">
           {experiences.map((exp, index) => (
             <div key={index} className="flex flex-col items-center flex-1 group">
               {/* Year - positioned above the timeline line */}
@@ -83,6 +84,35 @@ export const ExperienceTimeline = () => {
                   {exp.period}
                 </p>
                 <p className="text-xs text-cv-content-foreground/70 mt-1 text-center leading-tight">
+                  {exp.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile: vertical list */}
+        <div className="flex md:hidden flex-col space-y-3">
+          {experiences.map((exp, index) => (
+            <div key={index} className="flex items-start space-x-3 p-3 bg-cv-sidebar/5 rounded-lg shadow-md border border-cv-accent/10">
+              <div className="flex flex-col items-center space-y-2">
+                <div className="text-xs font-bold text-cv-accent bg-cv-accent-light px-2 py-1 rounded-full whitespace-nowrap">
+                  {exp.year}
+                </div>
+                <div className="w-3 h-3 bg-cv-accent rounded-full shadow-lg"></div>
+              </div>
+              
+              <div className="flex-1">
+                <h4 className="font-semibold text-sm text-cv-content-foreground leading-tight">
+                  {exp.title}
+                </h4>
+                <p className="text-sm text-cv-accent font-medium mt-1">
+                  {exp.company}
+                </p>
+                <p className="text-xs text-cv-text-light mt-1">
+                  {exp.period}
+                </p>
+                <p className="text-xs text-cv-content-foreground/70 mt-1 leading-tight">
                   {exp.description}
                 </p>
               </div>
