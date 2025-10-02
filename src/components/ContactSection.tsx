@@ -6,7 +6,7 @@ const contactMethods = [
   {
     type: "Email",
     value: "bautistarisoli@gmail.com",
-    href: "mailto:bautistarisoli@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=bautistarisoli@gmail.com",
     icon: FiMail,
     color: "text-blue-500"
   },
@@ -50,7 +50,7 @@ export const ContactSection = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 p-2 rounded-lg bg-cv-sidebar/5 hover:bg-cv-accent/10 transition-all duration-200 hover:scale-105 group cursor-pointer"
             >
-              <IconComponent className={`w-3 h-3 ${method.color} group-hover:scale-110 transition-transform`} />
+              <IconComponent className={`w-7 h-7 ${method.color} group-hover:scale-110 transition-transform`} />
               <div className="text-xs">
                 <div className="font-medium text-cv-content-foreground text-xs">{method.type}</div>
                 <div className="text-cv-text-light truncate text-xs">{method.value}</div>

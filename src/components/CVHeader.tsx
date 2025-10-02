@@ -1,5 +1,6 @@
 import profilePhoto from "@/assets/profile-photo.jpg";
 import { Card } from "@/components/ui/card";
+import { getYears } from "@/utils/getYears";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const CVHeader = () => {
@@ -17,7 +18,7 @@ export const CVHeader = () => {
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Bautista Risoli</h1>
           <p className="text-cv-sidebar-foreground/80 text-lg">Técnico en Comercialización</p>
-          <p className="text-cv-sidebar-foreground/70">22 años</p>
+          <p className="text-cv-sidebar-foreground/70">{getYears()} años</p>
         </div>
 
         <div className="space-y-3 w-full">

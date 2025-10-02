@@ -1,18 +1,18 @@
 import profilePhoto from "@/assets/profile-photo.jpg";
 import { Card } from "@/components/ui/card";
+import { getYears } from "@/utils/getYears";
 import { MapPin, Calendar, GraduationCap } from "lucide-react";
 
 export const ProfileHeader = () => {
   return (
-    <Card className="bg-gradient-to-r from-cv-sidebar to-cv-sidebar/90 text-cv-sidebar-foreground p-4 shadow-xl border-0">
+    <Card className="bg-gradient-to-r from-cv-sidebar to-cv-sidebar/90 text-cv-sidebar-foreground shadow-xl border-0 p-4">
       <div className="flex items-center justify-center space-x-6">
         {/* Profile Photo */}
-        <div className="relative">
-          <div className="absolute inset-0 bg-cv-accent/20 rounded-full blur-xl"></div>
+        <div className="relative w-20 h-20">
           <img
             src={profilePhoto}
             alt="Bautista Risoli"
-            className="relative w-20 h-20 rounded-full object-cover border-3 border-cv-accent shadow-xl hover:scale-105 transition-transform duration-300"
+            className="relative w-full h-full rounded-md shadow-xl hover:scale-105 transition-transform duration-300"
             style={{ objectPosition: 'center center' }}
           />
         </div>
@@ -23,7 +23,7 @@ export const ProfileHeader = () => {
           <div className="flex items-center justify-center space-x-3 text-cv-accent text-sm font-semibold">
             <div className="flex items-center space-x-1">
               <GraduationCap className="w-4 h-4" />
-              <span>Técnico en Comercialización</span>
+              <span className="">Técnico en Comercialización</span>
             </div>
             <span className="text-cv-sidebar-foreground/60">•</span>
             <span className="text-xs bg-cv-accent/20 px-2 py-1 rounded-full">UNMDP 2021-2024</span>
@@ -35,7 +35,7 @@ export const ProfileHeader = () => {
             <div className="flex items-center space-x-1 text-cv-sidebar-foreground/90">
               <Calendar className="w-3 h-3 text-cv-accent" />
               <div>
-                <div className="font-medium">22 años</div>
+                <div className="font-medium">{getYears()} años</div>
                 <div className="opacity-80">01/08/2002</div>
               </div>
             </div>

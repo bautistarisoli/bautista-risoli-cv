@@ -32,12 +32,12 @@ const academicProjects = [
 export const LanguagesAndAcademicSection = () => {
   return (
     <Card className="bg-cv-content border-border/50 p-3 shadow-lg hover:shadow-xl transition-all duration-300">
-      <div className="space-y-2 flex flex-col items-center justify-center h-full">
+      <div className="space-y-2 flex flex-col items-center justify-center h-full text-xl">
         {/* Academic Experience */}
         <Popover>
           <PopoverTrigger asChild>
             <div className="flex items-center justify-center space-x-2 cursor-pointer hover:bg-cv-accent/5 p-2 rounded-lg transition-all duration-200 group">
-              <GraduationCap className="w-4 h-4 text-cv-accent group-hover:scale-110 transition-transform" />
+              <GraduationCap className="w-7 h-7 text-cv-accent group-hover:scale-110 transition-transform" />
               <h3 className="text-base font-semibold text-cv-content-foreground">Experiencia académica</h3>
               <div className="text-xs text-cv-text-light opacity-70">Click para ver</div>
             </div>
@@ -76,7 +76,7 @@ export const LanguagesAndAcademicSection = () => {
         <Popover>
           <PopoverTrigger asChild>
             <div className="flex items-center justify-center space-x-2 cursor-pointer hover:bg-cv-accent/5 p-2 rounded-lg transition-all duration-200 group">
-              <Languages className="w-4 h-4 text-cv-accent group-hover:scale-110 transition-transform" />
+              <Languages className="w-7 h-7 text-cv-accent group-hover:scale-110 transition-transform" />
               <h3 className="text-base font-semibold text-cv-content-foreground">Idiomas</h3>
               <div className="text-xs text-cv-text-light opacity-70">Click para ver</div>
             </div>

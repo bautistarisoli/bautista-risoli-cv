@@ -56,7 +56,7 @@ export const ExperienceTimeline = () => {
       
       <div className="relative flex-1 flex flex-col">
         {/* Timeline line - positioned between years and circles */}
-        <div className="absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-cv-accent/20 via-cv-accent to-cv-accent/20"></div>
+        <div className="absolute top-10 left-0 right-0 h-0.5 bg-gradient-to-r from-cv-accent/20 via-cv-accent to-cv-accent/20"></div>
         
         <div className="flex justify-between items-start space-x-2">
           {experiences.map((exp, index) => (
