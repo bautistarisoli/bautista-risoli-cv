@@ -6,7 +6,7 @@ import { MapPin, Calendar, GraduationCap } from "lucide-react";
 export const ProfileHeader = () => {
   return (
     <Card className="bg-gradient-to-r from-cv-sidebar to-cv-sidebar/90 text-cv-sidebar-foreground shadow-xl border-0 p-4">
-      <div className="flex items-center justify-center space-x-6">
+      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-6 space-y-3 md:space-y-0">
         {/* Profile Photo */}
         <div className="relative w-20 h-20">
           <img
@@ -19,13 +19,13 @@ export const ProfileHeader = () => {
         
         {/* Main Info */}
         <div className="text-center space-y-1">
-          <h1 className="text-2xl font-bold text-cv-sidebar-foreground">Bautista Risoli</h1>
-          <div className="flex items-center justify-center space-x-3 text-cv-accent text-sm font-semibold">
+          <h1 className="text-xl md:text-2xl font-bold text-cv-sidebar-foreground">Bautista Risoli</h1>
+          <div className="flex flex-col md:flex-row items-center justify-center md:space-x-3 space-y-1 md:space-y-0 text-cv-accent text-xs md:text-sm font-semibold">
             <div className="flex items-center space-x-1">
               <GraduationCap className="w-4 h-4" />
               <span className="">Técnico en Comercialización</span>
             </div>
-            <span className="text-cv-sidebar-foreground/60">•</span>
+            <span className="hidden md:inline text-cv-sidebar-foreground/60">•</span>
             <span className="text-xs bg-cv-accent/20 px-2 py-1 rounded-full">UNMDP 2021-2024</span>
           </div>
         </div>

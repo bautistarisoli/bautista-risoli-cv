@@ -5,7 +5,7 @@ import { ExperienceTimeline } from "@/components/ExperienceTimeline";
 
 const Index = () => {
   return (
-    <div className="h-screen bg-gradient-subtle p-3 overflow-hidden">
+    <div className="min-h-screen md:h-screen bg-gradient-subtle p-3 md:overflow-hidden overflow-auto">
       <div className="max-w-7xl mx-auto h-full flex flex-col space-y-2">
         {/* Profile Header - Compact */}
         <div className="flex-shrink-0">
@@ -13,12 +13,12 @@ const Index = () => {
         </div>
         
         {/* Experience Timeline */}
-        <div className="flex-1 min-h-0">
+        <div className="flex-1 md:min-h-0">
           <ExperienceTimeline />
         </div>
         
         {/* Interactive Sections Grid - Bottom */}
-        <div className="flex-shrink-0 h-[30%]">
+        <div className="flex-shrink-0 md:h-[30%]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full mx-auto h-full">
             <ContactSection />
             <LanguagesAndAcademicSection />
