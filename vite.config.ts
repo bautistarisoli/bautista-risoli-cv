@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/bautista-risoli-cv",
+  base: "/bautista-risoli-cv/",
 }));
